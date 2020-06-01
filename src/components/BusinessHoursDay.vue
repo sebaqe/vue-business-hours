@@ -95,6 +95,9 @@
             ></BusinessHoursDatalist>
           </div>
         </transition>
+        <transition name="fade">
+          <div class="flex-row dash" role="cell" v-visible="isOpenToday">-</div>
+        </transition>
         <div class="flex-row remove" role="cell" v-visible="isOpenToday">
           <button
             type="button"
